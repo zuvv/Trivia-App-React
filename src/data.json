@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "id": "ST",
+      "name": "StarTrek"
+    },
+    {
+      "id": "H",
+      "name": "History"
+    },
+    {
+      "id": "A",
+      "name": "Art"
+    }
+  ],
+  "trivia": [
+    {
+      "id": "e1",
+      "categoryID": "ST",
+      "question": "Who is captain of enterprise TNG?",
+      "answer": "Picard",
+      "questionAsked": false
+    },
+    {
+      "id": "e2",
+      "categoryID": "ST",
+      "question": "Who is captain of Voyager?",
+      "answer": "Janeway",
+      "questionAsked": false
+    },
+    {
+      "id": "e3",
+      "categoryID": "ST",
+      "question": "Who is the android in startrek?",
+      "answer": "Data",
+      "questionAsked": false
+    },
+    {
+      "id": "e4",
+      "categoryID": "H",
+      "question": "Who was the first president?",
+      "answer": "George Washington",
+      "questionAsked": false
+    }
+  ]
+}
