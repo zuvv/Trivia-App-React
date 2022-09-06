@@ -9,52 +9,915 @@
       "name": "History"
     },
     {
-      "id": "A",
-      "name": "Art"
+      "id": "R",
+      "name": "Riddles"
+    },
+    {
+      "id": "S",
+      "name": "Science"
     }
   ],
-  "trivia": [
+  "trivia": 
+  [
     {
       "id": "e1",
       "categoryID": "ST",
-      "question": "Who is captain of enterprise TNG?",
-      "answer": "Picard",
-      "questionAsked": false
+      "question": "Who is captain of the USS Enterprise in The Next Generation?",
+      "answer": "Jean-Luc Picard"
     },
     {
       "id": "e2",
       "categoryID": "ST",
-      "question": "Who is captain of Voyager?",
-      "answer": "Janeway",
-      "questionAsked": false
+      "question": "Who is the captain of the USS Voyager?",
+      "answer": "Catherine Janeway"
     },
     {
       "id": "e3",
       "categoryID": "ST",
-      "question": "Who is the android in startrek?",
-      "answer": "Data",
-      "questionAsked": false
+      "question": "Who is the android in The Next Generation?",
+      "answer": "Data"
     },
     {
       "id": "e4",
       "categoryID": "H",
-      "question": "Who was the first president?",
-      "answer": "George Washington",
-      "questionAsked": false
+      "question": "Who was the first president of the United States?",
+      "answer": "George Washington"
     },
     {
       "id": "e5",
       "categoryID": "H",
       "question": "The United States bought Alaska from which country?",
-      "answer": "Russia",
-      "questionAsked": false
+      "answer": "Russia"
     },
     {
       "id": "e6",
       "categoryID": "H",
       "question": "Which era marked a switch from agricultural practices to industrial practices?",
-      "answer": "The Industrial Revolution",
-      "questionAsked": false
+      "answer": "The Industrial Revolution"
+    },
+    {
+      "id": "e7",
+      "categoryID": "H",
+      "question": "Where did Albert Einstein live before moving to the United States?",
+      "answer": "Germany"
+    },
+    {
+      "id": "e8",
+      "categoryID": "H",
+      "question": "Who is commonly referred to as the person who created the first printing press?",
+      "answer": "Johannes Gutenberg"
+    },
+    {
+      "id": "e9",
+      "categoryID": "H",
+      "question": "How many days in a week were there in ancient Roman times?",
+      "answer": 8
+    },
+    {
+      "id": "e10",
+      "categoryID": "H",
+      "question": "Which organization was awarded the Nobel Peace Prize in 1917?",
+      "answer": "The Red Cross"
+    },
+    {
+      "id": "e11",
+      "categoryID": "H",
+      "question": "Who was the first man to walk on the moon?",
+      "answer": "Neil Armstrong"
+    },
+    {
+      "id": "e12",
+      "categoryID": "H",
+      "question": "The Peloponnesian War was fought between Athens and which other ancient Greek state?",
+      "answer": "Sparta"
+    },
+    {
+      "id": "e13",
+      "categoryID": "H",
+      "question": "Who built the first car in America?",
+      "answer": "Henry Ford"
+    },
+    {
+      "id": "e14",
+      "categoryID": "H",
+      "question": "Which team won the first Super Bowl?",
+      "answer": "GreenBay Packers"
+    },
+    {
+      "id": "e15",
+      "categoryID": "H",
+      "question": "How many times has the Mona Lisa been stolen?",
+      "answer": 1
+    },
+    {
+      "id": "e16",
+      "categoryID": "H",
+      "question": "What year did India gain independence from Britain?",
+      "answer": 1947
+    },
+    {
+      "id": "e17",
+      "categoryID": "H",
+      "question": "Who was the first Emperor of Rome?",
+      "answer": "Augustus Octavian"
+    },
+    {
+      "id": "e18",
+      "categoryID": "H",
+      "question": "Which two city-states fought in the Peloponnesian War?",
+      "answer": "Athens and Sparta"
+    },
+    {
+      "id": "e19",
+      "categoryID": "H",
+      "question": "What is the name of the ancient region in southwest Asia that is referred to today as the Middle East?",
+      "answer": "Mesopotamia"
+    },
+    {
+      "id": "e20",
+      "categoryID": "H",
+      "question": "Which Greek goddess was the Parthenon dedicated to?",
+      "answer": "Athena"
+    },
+    {
+      "id": "e21",
+      "categoryID": "H",
+      "question": "What are the seven wonders of the ancient world?",
+      "answer": "The Great Pyramid of Giza in Egypt, the Hanging Gardens of Babylon, the Statue of Zeus at Olympia, the Temple of Artemis at Ephesus, the Mausoleum at Halicarnassus, the Colossus of Rhodes, and the Lighthouse of Alexandria"
+    },
+    {
+      "id": "e22",
+      "categoryID": "H",
+      "question": "Who is the king of the Olympian gods in Greek mythology?",
+      "answer": "Zeus"
+    },
+    {
+      "id": "e23",
+      "categoryID": "H",
+      "question": "When was Julius Caesar assassinated?",
+      "answer": "Ides of March (March 15, 44 BC)"
+    },
+    {
+      "id": "e24",
+      "categoryID": "H",
+      "question": "The Maya Empire was centered in what is now which country?",
+      "answer": "Guatemala"
+    },
+    {
+      "id": "e25",
+      "categoryID": "H",
+      "question": "Which ancient figure is often considered the founder of Western philosophy?",
+      "answer": "Socrates"
+    },
+    {
+      "id": "e26",
+      "categoryID": "H",
+      "question": "What was the name of the ancient trade route that connected the East with the West?",
+      "answer": "The Silk Road"
+    },
+    {
+      "id": "e27",
+      "categoryID": "H",
+      "question": "How old was King Tutankhamun when he died?",
+      "answer": 19
+    },
+    {
+      "id": "e28",
+      "categoryID": "H",
+      "question": "Where is the Pyramid of the Sun located?",
+      "answer": "Teotihuacán, Mexico"
+    },
+    {
+      "id": "e29",
+      "categoryID": "H",
+      "question": "Which famous battle is widely considered a turning point in the wars between Persia and Greece?",
+      "answer": "The Battle of Marathon in 490 BC"
+    },
+    {
+      "id": "e30",
+      "categoryID": "H",
+      "question": "Which fabric was invented in Ancient China?",
+      "answer": "Silk"
+    },
+    {
+      "id": "e31",
+      "categoryID": "H",
+      "question": "The Byzantine Empire was a continuation of which powerful ancient empire?",
+      "answer": "The Roman Empire"
+    },
+    {
+      "id": "e32",
+      "categoryID": "H",
+      "question": "What year was the first iPhone released?",
+      "answer": 2007
+    },
+    {
+      "id": "e33",
+      "categoryID": "H",
+      "question": "What was the acronym commonly used for the 2000 software problem that many thought would cause computers to become inoperable?",
+      "answer": "Y2K"
+    },
+    {
+      "id": "e34",
+      "categoryID": "H",
+      "question": "The U.S. rover Curiosity landed on which planet in August 2012?",
+      "answer": "Mars"
+    },
+    {
+      "id": "e35",
+      "categoryID": "H",
+      "question": "What year did the Berlin Wall fall?",
+      "answer": 1989
+    },
+    {
+      "id": "e36",
+      "categoryID": "H",
+      "question": "What year was Facebook created?",
+      "answer": 2004
+    },
+    {
+      "id": "e37",
+      "categoryID": "H",
+      "question": "Which planet was downgraded to a dwarf planet in 2006?",
+      "answer": "Pluto"
+    },
+    {
+      "id": "e38",
+      "categoryID": "H",
+      "question": "What year did Google launch?",
+      "answer": 1998
+    },
+    {
+      "id": "e39",
+      "categoryID": "H",
+      "question": "Brexit refers to which country leaving the European Union?",
+      "answer": "The United Kingdom"
+    },
+    {
+      "id": "e40",
+      "categoryID": "H",
+      "question": "What year did the Internet become available to the public?",
+      "answer": 1993
+    },
+    {
+      "id": "e41",
+      "categoryID": "H",
+      "question": "What is the name of the whistleblower who leaked classified information from the National Security Agency (NSA) in 2013?",
+      "answer": "Edward Snowden"
+    },
+    {
+      "id": "e42",
+      "categoryID": "H",
+      "question": "What’s the call sign of the president’s helicopter?",
+      "answer": "Marine One"
+    },
+    {
+      "id": "e43",
+      "categoryID": "H",
+      "question": "What year did Apple Computer introduce the first iPod?",
+      "answer": 2001
+    },
+    {
+      "id": "e44",
+      "categoryID": "H",
+      "question": "What was the route across the US continent that many Americans used to travel to the West Coast during the 19th century?",
+      "answer": "The Oregon Trail"
+    },
+    {
+      "id": "e45",
+      "categoryID": "H",
+      "question": "What did the abbreviation RMS stand for in the RMS Titanic in 1912?",
+      "answer": "Royal Mail Ship"
+    },
+    {
+      "id": "e46",
+      "categoryID": "H",
+      "question": "Who was the first Chancellor of a united Germany in 1871?",
+      "answer": "Otto Von Bismark"
+    },
+    {
+      "id": "e47",
+      "categoryID": "H",
+      "question": "What year was the European Union founded?",
+      "answer": 1993
+    },
+    {
+      "id": "e48",
+      "categoryID": "H",
+      "question": "What prison did revolutionaries taking part in the French Revolution storm in 1789?",
+      "answer": "The Bastille"
+    },
+    {
+      "id": "e49",
+      "categoryID": "H",
+      "question": "What was the name of the constitutional republic that governed Germany post WW1, from 1919-1933?",
+      "answer": "Weimar Republic"
+    },
+    {
+      "id": "e50",
+      "categoryID": "H",
+      "question": "What city was destroyed by the eruption of Mt. Vesuvius?",
+      "answer": "Pompeii"
+    },
+    {
+      "id": "e51",
+      "categoryID": "H",
+      "question": "Between 1346 to 1353, a deadly virus known as Yersinia Pestis swept across parts of Eurasia, North Africa, and the European continent. What was this pandemic commonly referred to?",
+      "answer": "Black Death/The Plague"
+    },
+    {
+      "id": "e52",
+      "categoryID": "H",
+      "question": "When Christopher Columbus sailed to America, what was the first region he arrived in?",
+      "answer": "The Bahamas Archipelago"
+    },
+    {
+      "id": "e53",
+      "categoryID": "H",
+      "question": "When was the People's Republic of China founded?",
+      "answer": 1872
+    },
+    {
+      "id": "e54",
+      "categoryID": "H",
+      "question": "What number does the Roman numeral D stand for?",
+      "answer": 500
+    },
+    {
+      "id": "e55",
+      "categoryID": "H",
+      "question": "What was the name of the military government that ruled Japan from 1603 to 1868?",
+      "answer": "Tokugawa [Edo] Shogunate"
+    },
+    {
+      "id": "e56",
+      "categoryID": "H",
+      "question": "When was Roman dictator Julius Caesar assasinated?",
+      "answer": "15 March, 44 B.C (Ides of March)"
+    },
+    {
+      "id": "e57",
+      "categoryID": "R",
+      "question": "What has to be broken before you can use it?",
+      "answer": "An Egg"
+    },
+    {
+      "id": "e58",
+      "categoryID": "R",
+      "question": "I’m tall when I’m young, and I’m short when I’m old. What am I?",
+      "answer": "A candle"
+    },
+    {
+      "id": "e59",
+      "categoryID": "R",
+      "question": "What month of the year has 28 days?",
+      "answer": "All of them"
+    },
+    {
+      "id": "e60",
+      "categoryID": "R",
+      "question": "What is full of holes but still holds water?",
+      "answer": "A sponge"
+    },
+    {
+      "id": "e61",
+      "categoryID": "R",
+      "question": "What question can you never answer yes to?",
+      "answer": "Are you asleep yet?"
+    },
+    {
+      "id": "e62",
+      "categoryID": "R",
+      "question": "What is always in front of you but can’t be seen?",
+      "answer": "The future"
+    },
+    {
+      "id": "e63",
+      "categoryID": "R",
+      "question": "What can you break, even if you never pick it up or touch it?",
+      "answer": "A promise"
+    },
+    {
+      "id": "e64",
+      "categoryID": "R",
+      "question": "What goes up but never comes down?",
+      "answer": "Your age"
+    },
+    {
+      "id": "e65",
+      "categoryID": "R",
+      "question": "A man who was outside in the rain without an umbrella or hat didn’t get a single hair on his head wet. Why?",
+      "answer": "He was bald."
+    },
+    {
+      "id": "e66",
+      "categoryID": "R",
+      "question": "What gets wet while drying?",
+      "answer": "A towel"
+    },
+    {
+      "id": "e67",
+      "categoryID": "R",
+      "question": "I shave every day, but my beard stays the same. What am I?",
+      "answer": "A barber"
+    },
+    {
+      "id": "e68",
+      "categoryID": "R",
+      "question": "You see a boat filled with people, yet there isn’t a single person on board. How is that possible?",
+      "answer": "All the people on the boat are married."
+    },
+    {
+      "id": "e69",
+      "categoryID": "R",
+      "question": "I have branches, but no fruit, trunk or leaves. What am I?",
+      "answer": "A bank"
+    },
+    {
+      "id": "e70",
+      "categoryID": "R",
+      "question": "What can’t talk but will reply when spoken to?",
+      "answer": "An echo"
+    },
+    {
+      "id": "e71",
+      "categoryID": "R",
+      "question": "The more of this there is, the less you see. What is it?",
+      "answer": "Darkness"
+    },
+    {
+      "id": "e72",
+      "categoryID": "R",
+      "question": "What has many keys but can’t open a single lock?",
+      "answer": "A piano"
+    },
+    {
+      "id": "e73",
+      "categoryID": "R",
+      "question": "What invention lets you look right through a wall?",
+      "answer": "A window"
+    },
+    {
+      "id": "e74",
+      "categoryID": "R",
+      "question": "I am an odd number. Take away a letter and I become even. What number am I?",
+      "answer": "Seven"
+    },
+    {
+      "id": "e75",
+      "categoryID": "R",
+      "question": "If two’s company, and three’s a crowd, what are four and five?",
+      "answer": "Nine"
+    },
+    {
+      "id": "e76",
+      "categoryID": "R",
+      "question": "What three numbers, none of which is zero, give the same result whether they’re added or multiplied?",
+      "answer": "One, two and three"
+    },
+    {
+      "id": "e77",
+      "categoryID": "R",
+      "question": "Which is heavier: a ton of bricks or a ton of feathers?",
+      "answer": "Neither—they both weigh a ton."
+    },
+    {
+      "id": "e78",
+      "categoryID": "ST",
+      "question": "What is Sulu's primary position on the U.S.S. Enterprise?",
+      "answer": "Helmsman"
+    },
+    {
+      "id": "e79",
+      "categoryID": "ST",
+      "question": "Which Star Trek captain has an artificial heart?",
+      "answer": "Jean-Luc Picard"
+    },
+    {
+      "id": "e80",
+      "categoryID": "ST",
+      "question": "Which species was the first to discover warp drive?",
+      "answer": "Vulcans"
+    },
+    {
+      "id": "e81",
+      "categoryID": "ST",
+      "question": "What future Starfleet captain survived the Battle of Wolf 359?",
+      "answer": "Benjamin Sisko"
+    },
+    {
+      "id": "e82",
+      "categoryID": "ST",
+      "question": "What is Deanna Troi's favorite food?",
+      "answer": "Chocolate"
+    },
+    {
+      "id": "e83",
+      "categoryID": "ST",
+      "question": "What is Lieutenant Uhura's first name?",
+      "answer": "Nyota"
+    },
+    {
+      "id": "e84",
+      "categoryID": "ST",
+      "question": "Which character serves as the head of security for the space station Deep Space Nine?",
+      "answer": "Odo"
+    },
+    {
+      "id": "e85",
+      "categoryID": "ST",
+      "question": "Who created the Bajoran wormhole?",
+      "answer": "The Prophets/Wormhole Aliens"
+    },
+    {
+      "id": "e86",
+      "categoryID": "ST",
+      "question": "What type of fish does Captain Picard keep in his ready room?",
+      "answer": "Lionfish"
+    },
+    {
+      "id": "e87",
+      "categoryID": "ST",
+      "question": "What ST:TNG prop was designed using an automotive air filter and a hair band?",
+      "answer": "Geordi's Visor"
+    },
+    {
+      "id": "e88",
+      "categoryID": "ST",
+      "question": "Which character was trapped in a transporter buffer for 75 years?",
+      "answer": "Montgomery Scott"
+    },
+    {
+      "id": "e89",
+      "categoryID": "ST",
+      "question": "What character asks Data if he is \"fully functional\"?",
+      "answer": "Tasha Yar"
+    },
+    {
+      "id": "e90",
+      "categoryID": "ST",
+      "question": "What type of pet does Captain Archer have on Enterprise?",
+      "answer": "Dog"
+    },
+    {
+      "id": "e91",
+      "categoryID": "ST",
+      "question": "What was Seven of Nine's name before she was assimilated by the Borg?",
+      "answer": "Annika Hansen"
+    },
+    {
+      "id": "e92",
+      "categoryID": "ST",
+      "question": "Who is the youngest captain in Starfleet history?",
+      "answer": "James T. Kirk"
+    },
+    {
+      "id": "e93",
+      "categoryID": "ST",
+      "question": "What is the Klingon homeworld?",
+      "answer": "Qo'noS/Kronos"
+    },
+    {
+      "id": "e94",
+      "categoryID": "ST",
+      "question": "What is Mr. Chekhov's first name?",
+      "answer": "Pavel"
+    },
+    {
+      "id": "e95",
+      "categoryID": "ST",
+      "question": "Which Star Trek captain loves baseball?",
+      "answer": "Benjamin Sisko"
+    },
+    {
+      "id": "e96",
+      "categoryID": "ST",
+      "question": "Which Star Trek series has a female Chief Engineer?",
+      "answer": "Voyager -> B'Elanna Torres"
+    },
+    {
+      "id": "e97",
+      "categoryID": "ST",
+      "question": "What Cardassian spy had a love affair with Chakotay?",
+      "answer": "Seska"
+    },
+    {
+      "id": "e98",
+      "categoryID": "ST",
+      "question": "Who is Wesley's mother?",
+      "answer": "Beverly Crusher."
+    },
+    {
+      "id": "e99",
+      "categoryID": "ST",
+      "question": "Who is the Chief Medical Officer of Deep Space Nine?",
+      "answer": "Dr. Julian Subatoi Bashir"
+    },
+    {
+      "id": "e100",
+      "categoryID": "ST",
+      "question": "What Deep Space Nine character is a Trill symbiont?",
+      "answer": "Dax"
+    },
+    {
+      "id": "e101",
+      "categoryID": "ST",
+      "question": "What character owns a bar on Deep Space Nine?",
+      "answer": "Quark"
+    },
+    {
+      "id": "e102",
+      "categoryID": "ST",
+      "question": "Who is Data's brother?",
+      "answer": "Lore"
+    },
+    {
+      "id": "e103",
+      "categoryID": "ST",
+      "question": "What is the name of Worf's son?",
+      "answer": "Alexander"
+    },
+    {
+      "id": "e104",
+      "categoryID": "ST",
+      "question": "What quadrant is home to the Founders?",
+      "answer": "Gamma"
+    },
+    {
+      "id": "e105",
+      "categoryID": "ST",
+      "question": "Who replaced Dr. Crusher in the second season of Star Trek: The Next Generation?",
+      "answer": "Dr. Pulaski"
+    },
+    {
+      "id": "e106",
+      "categoryID": "ST",
+      "question": "Which Startrek movie is commonly regarded as the best Startrek movie?",
+      "answer": "Galaxy Quest"
+    },
+    {
+      "id": "e107",
+      "categoryID": "ST",
+      "question": "What Star Trek character answers to the nickname \"Bones\"?",
+      "answer": "Leonard McCoy"
+    },
+    {
+      "id": "e108",
+      "categoryID": "ST",
+      "question": "What former transporter chief was later promoted to Chief of Operations on Deep Space Nine?",
+      "answer": "Miles O'Brien"
+    },
+    {
+      "id": "e109",
+      "categoryID": "ST",
+      "question": "What is needed for a warp engine?",
+      "answer": "dilithium crystal"
+    },
+    {
+      "id": "e110",
+      "categoryID": "ST",
+      "question": "What is the only intoxicant served on the Enterprise-D?",
+      "answer": "Synthenol"
+    },
+    {
+      "id": "e111",
+      "categoryID": "ST",
+      "question": "Why did Quarks mother get arrested?",
+      "answer": "She was making profit"
+    },
+    {
+      "id": "e112",
+      "categoryID": "ST",
+      "question": "What are the rules that the Ferengi use?",
+      "answer": "The rules of acquisition"
+    },
+    {
+      "id": "e113",
+      "categoryID": "S",
+      "question": "Dry ice is a frozen form of which gas?",
+      "answer": "Carbon Dioxide"
+    },
+    {
+      "id": "e114",
+      "categoryID": "S",
+      "question": "How many colors are in the rainbow?",
+      "answer": 7
+    },
+    {
+      "id": "e115",
+      "categoryID": "S",
+      "question": "Which is the most abundant element in the universe?",
+      "answer": "Hydrogen"
+    },
+    {
+      "id": "e116",
+      "categoryID": "S",
+      "question": "What is the name of the tallest grass on earth?",
+      "answer": "Bamboo"
+    },
+    {
+      "id": "e117",
+      "categoryID": "S",
+      "question": "What is the study of mushrooms called?",
+      "answer": "Mycology"
+    },
+    {
+      "id": "e118",
+      "categoryID": "S",
+      "question": "Can an airplane go in reverse?",
+      "answer": "Yes"
+    },
+    {
+      "id": "e119",
+      "categoryID": "S",
+      "question": "Does sound travel faster in the air or in water?",
+      "answer": "Water"
+    },
+    {
+      "id": "e120",
+      "categoryID": "S",
+      "question": "Which oath of ethics taken by doctors is named after an Ancient Greek physician?",
+      "answer": "The Hippocratic Oath"
+    },
+    {
+      "id": "e121",
+      "categoryID": "S",
+      "question": "What does DNA stand for?",
+      "answer": "Deoxyribonucleic acid"
+    },
+    {
+      "id": "e122",
+      "categoryID": "S",
+      "question": "At what temperature are Celsius and Fahrenheit equal?",
+      "answer": -40
+    },
+    {
+      "id": "e123",
+      "categoryID": "S",
+      "question": "How do airplanes stay in the air?",
+      "answer": "Planes stay in the air because of the shape of their wings. Air moving over the wing gets forced downwards, which pushes the wing up."
+    },
+    {
+      "id": "e124",
+      "categoryID": "S",
+      "question": "What is chalk made of?",
+      "answer": "Limestone"
+    },
+    {
+      "id": "e125",
+      "categoryID": "S",
+      "question": "Which freezes faster, hot water or cold water?",
+      "answer": "Hot water freezes faster than cold, known as the Mpemba effect."
+    },
+    {
+      "id": "e126",
+      "categoryID": "S",
+      "question": "What is the only rock that floats?",
+      "answer": "Pumice. It forms from the froth at the top of lava flow, which cools very rapidly."
+    },
+    {
+      "id": "e127",
+      "categoryID": "S",
+      "question": "Can gold be created from other elements?",
+      "answer": "Yes"
+    },
+    {
+      "id": "e128",
+      "categoryID": "S",
+      "question": "What is the heaviest organ in the human body?",
+      "answer": "The liver"
+    },
+    {
+      "id": "e129",
+      "categoryID": "S",
+      "question": "How does fat leave your body when you lose weight?",
+      "answer": "Through your sweat, urine, and breath."
+    },
+    {
+      "id": "e130",
+      "categoryID": "S",
+      "question": "How many bones are in the human body?",
+      "answer": 206
+    },
+    {
+      "id": "e131",
+      "categoryID": "S",
+      "question": "How many teeth does an adult human have?",
+      "answer": 32
+    },
+    {
+      "id": "e132",
+      "categoryID": "S",
+      "question": "What part of the human body serves the purpose of maintaining balance?",
+      "answer": "The ears"
+    },
+    {
+      "id": "e133",
+      "categoryID": "S",
+      "question": "What was the name of the first man-made satellite launched by the Soviet Union in 1957?",
+      "answer": "Sputnik 1"
+    },
+    {
+      "id": "e134",
+      "categoryID": "S",
+      "question": "What is the biggest planet in our solar system?",
+      "answer": "Jupiter"
+    },
+    {
+      "id": "e135",
+      "categoryID": "S",
+      "question": "An unlit match has what form of energy?",
+      "answer": "Chemical"
+    },
+    {
+      "id": "e136",
+      "categoryID": "S",
+      "question": "This Saturn moon has a methane cycle, differentiating it from the other moons of the planet. What is its name?",
+      "answer": "Titan"
+    },
+    {
+      "id": "e137",
+      "categoryID": "S",
+      "question": "ATP is the molecular unit of energy that gives our body fuel on a cellular level. What does ATP stand for?",
+      "answer": "Adenosine triphosphate"
+    },
+    {
+      "id": "e138",
+      "categoryID": "S",
+      "question": "Where is the world’s most active volcano located?",
+      "answer": "Hawaii"
+    },
+    {
+      "id": "e139",
+      "categoryID": "S",
+      "question": "Optics is the study of what?",
+      "answer": "Light"
+    },
+    {
+      "id": "e140",
+      "categoryID": "S",
+      "question": "Using feet, how long does the human small intestine measure on average?",
+      "answer": "17 feet"
+    },
+    {
+      "id": "e141",
+      "categoryID": "S",
+      "question": "Most of a penny is made from what type of metal?",
+      "answer": "Zinc"
+    },
+    {
+      "id": "e142",
+      "categoryID": "S",
+      "question": "In 1953, the United States of America conducted its first and only nuclear artillery test. Where was the test held?",
+      "answer": "Nevada"
+    },
+    {
+      "id": "e143",
+      "categoryID": "S",
+      "question": "What are space travelers in Russia called?",
+      "answer": "Cosmonauts"
+    },
+    {
+      "id": "e144",
+      "categoryID": "S",
+      "question": "The name of this disease stems from the medieval term that means ‘bad air’. What disease is it?",
+      "answer": "Malaria"
+    },
+    {
+      "id": "e145",
+      "categoryID": "S",
+      "question": "What did Alfred Nobel invent?",
+      "answer": "Dynamite"
+    },
+    {
+      "id": "e146",
+      "categoryID": "S",
+      "question": "What prevents scurvy?",
+      "answer": "Vitamin C"
+    },
+    {
+      "id": "e147",
+      "categoryID": "S",
+      "question": "This refers to the amount of blood cells in a certain amount of blood.",
+      "answer": "Hematocrit"
+    },
+    {
+      "id": "e148",
+      "categoryID": "S",
+      "question": "Why do bubbles pop shortly after their blown?",
+      "answer": "Dirt from the air"
+    },
+    {
+      "id": "e149",
+      "categoryID": "S",
+      "question": "What will two particles of opposing charges do – repel or attract?",
+      "answer": "Attract"
+    },
+    {
+      "id": "e150",
+      "categoryID": "S",
+      "question": "This is the quality of an object that allows it to float on water.",
+      "answer": "Buoyancy"
     }
   ]
 }

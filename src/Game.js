@@ -6,9 +6,9 @@ class Game {
     this.category = "";
     this.question = "";
     this.answer = "";
-    this.allQuestions = Trivia_Data.trivia;
+    //this.allQuestions = Trivia_Data.trivia;
     this.allCategories = [];
-    this.activeCategories = ["ST"];
+    this.activeCategories = ["H"];
     this.activeQuestions = [];
     this.gameOver = false;
   }
@@ -18,7 +18,7 @@ class Game {
     this.category = "";
     this.question = "";
     this.answer = "";
-    this.allQuestions = Trivia_Data.trivia;
+    //this.allQuestions = Trivia_Data.trivia;
     this.activeQuestions = this.setActiveQuestions();
   }
 
@@ -38,14 +38,15 @@ class Game {
       this.question = "";
       this.answer = "";
     } else {
+      this.gameOver = false;
       let randomQuestion = this.getRandomQuestion();
-    
       //sets current values to the random question
       this.id = randomQuestion.id;
       this.categoryID = randomQuestion.categoryID;
       this.question = randomQuestion.question;
       this.answer = randomQuestion.answer;
-      console.log(this.getActiveQuestions());
+      //console.log(this.getActiveQuestions());
+      //remove question from list of active questions
       this.removeQuestion(this.id);
     }
   }

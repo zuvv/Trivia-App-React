@@ -33,13 +33,23 @@ class App extends React.Component {
   }
   handleClickBack() {
     if (this.state.classes.includes("show_category")) {
+      //category to front
+      this.setState({ gameOver: false});
       this.setState({ classes: ["card-container", "show_category"] });
+      Game.getNextQuestion();
+      setTimeout(() => {
+        this.setState({ question: Game.question, answer: Game.answer });
+      }, 300)
     } else {
+      //answer to front
       this.setState({ classes: ["card-container"] });
       Game.getNextQuestion();
       setTimeout(() => {
         this.setState({ question: Game.question, answer: Game.answer });
       }, 300);
+      if(Game.gameOver){
+        this.setState({ gameOver: Game.gameOver});
+      }
     }
   }
   //categories are not working with questions
@@ -60,8 +70,9 @@ class App extends React.Component {
           <div className="card">
             <div className="front">
               <div className="text-xl mb-2">{this.state.question}</div>
-              <div>{Game.gameOver ? "Game over" : "keep going"}</div>
+              <div>{Game.gameOver ? "No more questions, update your categories to try again." : ""}</div>
               <button className="mb-2"
+                disabled={this.state.gameOver}
                 onClick={() => {
                   this.handleClickAnswer();
                 }}
@@ -79,15 +90,13 @@ class App extends React.Component {
             <div className="back">
               {this.state.classes.includes("show_category") ? (
                 <div>
-                  <div>CATEGORIES</div>
+                  <div className="text-xl">Categories</div>
                   {this.state.allCategories.map((category, i) => {
-                    //console.log(this.state.activeCategories);
                     const is_on = this.state.activeCategories.includes(
                       category.id
                     )
                       ? true
                       : false;
-
                     const toggle_class = `toggle ${is_on ? "on" : "off"}`;
                     return (
                       <div key={i}>
