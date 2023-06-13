@@ -71,7 +71,7 @@ class App extends React.Component {
             <div className="front">
               <div className="text-xl mb-2">{this.state.question}</div>
               <div>{Game.gameOver ? "No more questions, update your categories to try again." : ""}</div>
-              <button className="mb-2"
+              <button className="AnswerButton"
                 disabled={this.state.gameOver}
                 onClick={() => {
                   this.handleClickAnswer();
@@ -79,7 +79,7 @@ class App extends React.Component {
               >
                 Show Answer
               </button>
-              <button
+              <button className="Button"
                 onClick={() => {
                   this.handleClickCategory();
                 }}
@@ -91,6 +91,7 @@ class App extends React.Component {
               {this.state.classes.includes("show_category") ? (
                 <div>
                   <div className="text-xl">Categories</div>
+                  <div className="toggles">
                   {this.state.allCategories.map((category, i) => {
                     const is_on = this.state.activeCategories.includes(
                       category.id
@@ -112,12 +113,13 @@ class App extends React.Component {
                       </div>
                     );
                   })}
+                  </div>
                 </div>
               ) : null}
               {!this.state.classes.includes("show_category") ? (
                 <div className="text-xl mb-2">{this.state.answer}</div>
               ) : null}
-              <button
+              <button className="Button"
                 onClick={() => {
                   this.handleClickBack();
                 }}

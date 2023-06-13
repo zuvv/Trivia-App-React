@@ -9,12 +9,47 @@ body, button, input{ font-family:avenir, sans-serif;}
 
 /*toggle*/
 .toggle {
-  width: 75px; height: 50px; background: #ccc; border: 2px solid #000; position:relative}
-.toggle.on {background: #ccff00}
-.toggle:before { content: ''; position:absolute ; top: 10px; width: 20px; height: 30px; background: #fff}
-.toggle.off:before { left: 10px;}
-.toggle.on:before { right: 10px;}
+  width: 75px; height: 50px; background: #ccc; border: 2px solid #000; position:relative; border-radius: 9999px}
 
+
+/*.toggle.on {background: #ccff00}*/
+.toggle.on{
+cursor: pointer;
+text-indent: -9999px;
+width: 75px;
+height: 50px;
+background: rgb(89, 236, 69);
+display: block;
+position: relative;
+}
+
+.toggle:before { content: ''; position:absolute ; top: 3px; width: 40px; height: 40px; background: #ffffff; border-radius: 100%;}
+.toggle.off:before { right: 30px;}
+.toggle.on:before { left: 30px;}
+
+.toggles{
+  display:flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.toggles > div {flex-basis:50%; padding-top: 10px; padding-bottom: 10px; }
+
+.Button{
+  margin-top: 10px;
+  color:#000;
+  background-color: #fff;
+  border:#000;
+  border-radius: 5px;
+}
+
+.Button:hover{
+  background-color: #ccc;
+}
+
+.AnswerButton:hover{
+  background-color: #ccc;
+}
 
 .App {
   display: flex;
@@ -23,7 +58,13 @@ body, button, input{ font-family:avenir, sans-serif;}
   justify-content: center;
 }
 
-.mb-2{ margin-bottom: 20px}
+.AnswerButton{ 
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  color:#000;
+  background-color: #fff;
+  border:#000;
+  border-radius: 5px}
 .text-xl{ font-size: 28px; line-height: 1;}
 .card button { display:block; width:100%; padding:10px; font-size: 18px;}
 
@@ -45,4 +86,4 @@ body, button, input{ font-family:avenir, sans-serif;}
 /* Custom */
 .card > .front { background: rgba(255,255,255,0.6); color: #000; }
 .card > .back { background: #000; color: #fff }
-.card-container.show_category > .card > .back { background: rgb(84, 80, 80); color: #fff; }
+.card-container.show_category > .card > .back { background: #767676; color: #fff; }
