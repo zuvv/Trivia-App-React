@@ -1,6 +1,7 @@
 # Trivia App Built in React 🧠
 Welcome to my Trivia App, crafted with React! 🚀
 All the intriguing questions are curated and stored in a CSV file, then transformed into a JSON format.
+https://zuvv.github.io/Trivia-App-React/
 
 ## Getting Started
 Initial start of the app shows History.
