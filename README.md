@@ -18,11 +18,11 @@ All questions are selected randomly and questions are not asked twice.
 7. Set sail for the distant shores of the public branch: `git subtree push --prefix build origin public`
 
 ### Publishing to GitHub Pages
-1. Navigate to Settings ⚙️
-2. Glide into Pages 📑
-3. Anoint the 'public' branch as your champion 🏆
-4. Crown the root 🌱
-5. Preserve the moment: Save
+1. Go to "Settings" (it looks like a gear icon).
+2. Find and click on "Pages" (it looks like a book).
+3. Choose the "public" branch as the main one.
+4. Set the main folder as the root.
+5. Don't forget to save your changes.
 
 ## HomePage Addition
 Don't forget to add your homepage URL to your `package.json`:
