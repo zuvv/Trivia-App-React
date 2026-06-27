@@ -1,4 +1,4 @@
-# Trivia App Built in React 🧠
+# Trivia App Built in React
 
 A trivia flashcard app built with React and TypeScript. Questions are stored in a JSON file and drawn randomly — no question is asked twice per session.
 
