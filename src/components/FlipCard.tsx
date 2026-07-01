@@ -26,7 +26,18 @@ export function FlipCard({
   onToggleCategory,
 }: Props) {
   const [view, setView] = useState<View>("question");
+  const [backView, setBackView] = useState<"answer" | "categories">("answer");
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const showAnswer = useCallback(() => {
+    setBackView("answer");
+    setView("answer");
+  }, []);
+
+  const showCategoriesView = useCallback(() => {
+    setBackView("categories");
+    setView("categories");
+  }, []);
 
   const handleBack = useCallback(() => {
     setView("question");
@@ -40,7 +51,7 @@ export function FlipCard({
   }, [onNext]);
 
   const isFlipped = view === "answer" || view === "categories";
-  const showCategories = view === "categories";
+  const showCategories = backView === "categories";
 
   const containerClass = [
     styles.container,
@@ -59,14 +70,14 @@ export function FlipCard({
           <button
             className={styles.primaryButton}
             disabled={gameOver}
-            onClick={() => setView("answer")}
+            onClick={showAnswer}
             aria-label="Show answer"
           >
             Show Answer
           </button>
           <button
             className={styles.button}
-            onClick={() => setView("categories")}
+            onClick={showCategoriesView}
             aria-label="Show categories"
           >
             Show Categories

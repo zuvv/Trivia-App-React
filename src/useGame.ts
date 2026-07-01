@@ -9,8 +9,8 @@ function filterQuestions(activeCategories: string[]): Question[] {
   return allQuestions.filter((q) => activeCategories.includes(q.categoryID));
 }
 
-function pickRandom<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)];
+function pickRandom<T>(arr: T[]): T | null {
+  return arr.length ? arr[Math.floor(Math.random() * arr.length)] : null;
 }
 
 const DEFAULT_CATEGORIES = ["H"];
@@ -18,45 +18,39 @@ const DEFAULT_CATEGORIES = ["H"];
 export function useGame() {
   const [activeCategories, setActiveCategories] =
     useState<string[]>(DEFAULT_CATEGORIES);
-  const [activeQuestions, setActiveQuestions] = useState<Question[]>(() =>
-    filterQuestions(DEFAULT_CATEGORIES)
-  );
-  const [current, setCurrent] = useState<Question | null>(() => {
-    const pool = filterQuestions(DEFAULT_CATEGORIES);
-    return pool.length ? pickRandom(pool) : null;
-  });
-  const [gameOver, setGameOver] = useState(false);
-
-  const advance = useCallback(
-    (pool: Question[], currentId: string | undefined) => {
-      const remaining = pool.filter((q) => q.id !== currentId);
-      setActiveQuestions(remaining);
-      if (remaining.length === 0) {
-        setGameOver(true);
-        setCurrent(null);
-      } else {
-        setGameOver(false);
-        setCurrent(pickRandom(remaining));
-      }
-    },
-    []
+  const [askedIds, setAskedIds] = useState<Set<string>>(() => new Set());
+  const [current, setCurrent] = useState<Question | null>(() =>
+    pickRandom(filterQuestions(DEFAULT_CATEGORIES))
   );
 
   const nextQuestion = useCallback(() => {
-    advance(activeQuestions, current?.id);
-  }, [advance, activeQuestions, current]);
+    if (!current) return;
+    const updatedAsked = new Set(askedIds);
+    updatedAsked.add(current.id);
+    setAskedIds(updatedAsked);
+    const pool = filterQuestions(activeCategories).filter(
+      (q) => !updatedAsked.has(q.id)
+    );
+    setCurrent(pickRandom(pool));
+  }, [current, askedIds, activeCategories]);
 
   const toggleCategory = useCallback(
     (id: string, isOn: boolean) => {
-      const updated = isOn
+      const updatedCategories = isOn
         ? activeCategories.filter((c) => c !== id)
         : [...activeCategories, id];
-      setActiveCategories(updated);
-      const newPool = filterQuestions(updated);
-      setActiveQuestions(newPool);
-      setGameOver(newPool.length === 0);
+      setActiveCategories(updatedCategories);
+
+      const pool = filterQuestions(updatedCategories).filter(
+        (q) => !askedIds.has(q.id)
+      );
+      const currentStillValid =
+        current && pool.some((q) => q.id === current.id);
+      if (!currentStillValid) {
+        setCurrent(pickRandom(pool));
+      }
     },
-    [activeCategories]
+    [activeCategories, askedIds, current]
   );
 
   const state: GameState = {
@@ -64,7 +58,7 @@ export function useGame() {
     answer: current?.answer ?? "",
     activeCategories,
     allCategories,
-    gameOver,
+    gameOver: current === null,
   };
 
   return { state, nextQuestion, toggleCategory };
